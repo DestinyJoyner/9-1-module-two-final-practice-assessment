@@ -31,3 +31,7 @@ hr {
 h4 {
     font-style: italic;
 }
+
+.hidden {
+    display: none;
+}
