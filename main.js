@@ -2,11 +2,9 @@
 // console.log('hi')
 // Create variable to access dropdown (select) -> then in fetch (create option elements for each name, give distinct value attributes, append 'option' to 'select')
 const dropDown = document.getElementById(`dropDown`);
-// console.log(dropDown);
 
 //Variables for 'ShoutOut' Elements
 const form = document.querySelector(`form`);
-console.log(form);
 const list = document.querySelector(`ul`);
 
 // // Create fetch function variable
@@ -84,3 +82,10 @@ form.addEventListener(`submit`, (event) => {
   }
   form.reset();
 });
+
+// EVENT LISTENER FOR REMOVE SHOUTOUT BUTTON
+const removeButton = document.getElementById(`reset-shoutouts`)
+removeButton.addEventListener(`click`, (e) => {
+    e.preventDefault()
+    list.innerHTML = ``
+})
