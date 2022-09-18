@@ -35,3 +35,12 @@ h4 {
 .hidden {
     display: none;
 }
+
+ul {
+    list-style: none;
+}
+
+.error, .shoutoutError {
+    color: red;
+    font-size: 13px;
+}
